@@ -1,0 +1,3 @@
+打包基础库(debug与release相同，都是打包成STATIC静态库，后面可以加上SHARE动态共享库)
+mkdir cmake-build-release && cd cmake-build-release
+cmake .. -DCMAKE_BUILD_TYPE=release -DCMAKE_BUILD_NO_EXAMPLES=true

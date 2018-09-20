@@ -26,9 +26,10 @@ set(CXX_FLAGS
  -Wwrite-strings
  -march=native
  # -MMD
- # -std=c++0x
+ -std=c++0x
  -rdynamic
  )
+
 if(CMAKE_BUILD_BITS EQUAL 32)
   list(APPEND CXX_FLAGS "-m32")
 endif()
@@ -41,7 +42,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 find_package(Boost REQUIRED)
-find_package(Protobuf)
+#find_package(Protobuf)
 find_package(CURL)
 find_package(ZLIB)
 find_path(CARES_INCLUDE_DIR ares.h)

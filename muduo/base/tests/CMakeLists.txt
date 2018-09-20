@@ -1,3 +1,6 @@
+add_executable(asynclogging_bench AsyncLogging_bench.cc)
+target_link_libraries(asynclogging_bench muduo_base)
+
 add_executable(asynclogging_test AsyncLogging_test.cc)
 target_link_libraries(asynclogging_test muduo_base)
 
